@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>
+        Este vídeo esta hospedado no meu próprio servidor
+    </p>
+    <p>
+        A ordem de compatibilidade esta organizada do arquivo mais leve para o mais pesado
+    </p>
+    <video poster="imagens/limoes-capa.png" width="600" controls loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/m4v">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p>
+            Seu navegador não é compatível com os formatos de video mp4, m4v, webm e ogv. <br>
+            Você pode baixar o vídeo <a href="midia/meu-video.m4v">Clicando Aqui.</a>
+        </p>
+    </video>
+    <p>
+        Obs: <br>
+        Tag width="" foi utilizada para diminuir o tamanho da apresentação do vídeo. <br>
+        Tag poster="" foi utilizada para adicionar a uma capa para o vídeo. <br>
+        Tag controls foi utulizada para adicionar o play, duração do vídeo, time line, etc.
+    </p>
+    <hr>
+    <h1>Inserindo Vídeos do YouTube</h1>
+</body>
+</html>
