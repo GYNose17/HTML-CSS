@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Size</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h1>Fontes</h1>
+
+    <hr>
+
+    <h2>Medidas</h2>
+    <h3>Medidas Absolutas</h3>
+    <p>
+        cm &rarr; Centímetro <br>
+        mm &rarr; Milímetro <br>
+        in &rarr; Inches / Polegadas <br>
+        <a href="medidas/absolutas/px.html">px</a> &rarr; Pixel(s) <br>
+        <a href="medidas/absolutas/pt.html" target="_self" rel="next">pt</a> &rarr; Ponto <br>
+        pc &rarr; Paica 
+    </p>
+    <h3>Medidas Relativas</h3>
+    <p>
+        em &rarr; <a href="medidas/relativas/em.html" target="_self" rel="next">Saiba mais.</a>
+    </p>
+
+    <hr>
+
+    <h2>Peso</h2>
+    <p>
+        A tag <code>font-weight: ;</code> define a espessura  da fonte e possui os seguintes parâmetros: <br>
+        <code>lighter - normal - bold - bolder</code> <br>
+        <code>100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900</code> <br>
+        Os parâmetros escritos estão presentes na maioria das fontes, enquanto os parâmetros numéricos aparecem com menas frequência.
+    </p>
+
+    <hr>
+
+    <h2>Estilo</h2>
+    <p>
+        A tag <code>font-style: ;</code> define o estilo da fonte com os seguintes parâmetros: <br>
+        <code>normal - italic - oblique</code>
+    </p>
+
+    <hr>
+
+    <h2>Shorthand Font</h2>
+    <h3>Introdução</h3>
+    <p>
+        É muito comum a utilização das tags: <code>font-style font-weight font-size font-family</code>. Sendo assim foi criado uma maneira de resumir tudo isso em somente uma linha de código.
+    </p>
+    <h3>Funcionamento</h3>
+    <p>
+        Utilizando a tag <code>font: ;</code> é necessário adicionar os parâmetros desejados de 
+        "style" "weight" "size" "family", nessa ordem, para o resumir algumas linhas de código.
+    </p>
+    <h4>Exemplo</h4>
+    <p>
+        O que seria: <br>
+        <code><pre>
+    *{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 3em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+        </pre></code>
+        Se torna: <br>
+        <code><pre>
+        *{
+            font: italic bolder 3em 'Arial', sans-serif;
+        }
+        </pre></code>
+    </p>
+    <hr>
+</body>
+</html>
