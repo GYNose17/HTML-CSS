@@ -28,7 +28,31 @@
 
         <hr>
 
-        <h2>Peso</h2>
+        <h2>Estilo</h2>
+        <h3>font-style</h3>
+        <p>
+            A tag <code>font-style: ;</code> define o estilo da fonte com os seguintes parâmetros: <br>
+            <code>normal - italic - oblique</code>
+        </p>
+        
+        <br>
+
+        <h3>font-family</h3>
+        <p>
+            A tag <code>font-family: ;</code> define a fonte, segue o exemplo:
+        </p>
+        <code>
+            <pre>
+font-family: Arial, Helvetica, sans-serif;
+            </pre>
+        </code>
+        <p>
+            Dessa maneira, a font Arial é tratada como principal, e a Helvetica só sera utilizada se o dispositivo do usuário não possuir suporte para a fonte primária, da mesma maneira se não houver suporte para a fonte secundaria ele procurará por uma fonte "sans-serif" (Sem Serifa) genérica que o aparelho tenha disponível.
+        </p>
+
+        <br>
+        
+        <h3>font-weight</h3>
         <p>
             A tag <code>font-weight: ;</code> define a espessura  da fonte e possui os seguintes parâmetros: <br>
             <code>lighter - normal - bold - bolder</code> <br>
@@ -36,13 +60,6 @@
             Os parâmetros escritos estão presentes na maioria das fontes, enquanto os parâmetros numéricos aparecem com menas frequência.
         </p>
 
-        <hr>
-
-        <h2>Estilo</h2>
-        <p>
-            A tag <code>font-style: ;</code> define o estilo da fonte com os seguintes parâmetros: <br>
-            <code>normal - italic - oblique</code>
-        </p>
 
         <hr>
 
@@ -51,32 +68,66 @@
         <p>
             É muito comum a utilização das tags: <code>font-style font-weight font-size font-family</code>. Sendo assim foi criado uma maneira de resumir tudo isso em somente uma linha de código.
         </p>
+
         <h3>Funcionamento</h3>
         <p>
             Utilizando a tag <code>font: ;</code> é necessário adicionar os parâmetros desejados de
             "style" "weight" "size" "family", nessa ordem, para o resumir algumas linhas de código.
         </p>
+
         <h4>Exemplo</h4>
         <p>
-            O que seria: <br>
-            <code><pre>
+            O que seria:
+        </p>
+
+        <code>
+            <pre>
 *{
     font-style: italic;
     font-weight: bold;
     font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
 }
-            </pre></code>
-        </p>
+            </pre>
+        </code>
+
         <p>
-            Se torna: <br>
-            <code><pre>
+            Se torna:
+        </p>
+
+        <code>
+            <pre>
 *{
     font: italic bolder 3em 'Arial', sans-serif;
 }
-            </pre></code>
-        </p>
+            </pre>
+        </code>
+
         <hr>
+
+        <h2>Fontes Importadas</h2>
+        <p>
+            Temos apenas algumas fontes disponíveis diretamente da máquina, sendo assim para tornar possível a utilização de outras fontes é necessário importa-las. <br>
+            Com o <a href="http://fonts.google.com" target="_blank" rel="next">fonts.google.com</a>, é possível adiquirir várias fontes e "linka-las" ao nosso código para utilização. <br>
+        </p>
+        <p>
+            Exemplo:
+        </p>
+        
+        <code>
+            <pre>
+    &lt;style&gt;
+        @import url('');
+    &lt;/style&gt;
+            </pre>
+        </code>
+
+        <p>
+            Basta adicionar o link da fonte e ja esta pronta para uso.
+        </p>
+
+        <hr>
+
     </main>
 </body>
 </html>
