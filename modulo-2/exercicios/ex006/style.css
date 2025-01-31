@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-color: #2A331F;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+h1#principal {
+    background-color: #A1E34F;
+    color: #33392D;
+    padding: 5px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+h1{
+    color: #A1E34F;
+}
+
+h2{
+    color: #7A8E61;
+}
