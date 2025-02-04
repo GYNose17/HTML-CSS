@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font-Size</title>
     <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <main>
         <h1>Fontes</h1>
@@ -115,10 +116,7 @@ font-family: Arial, Helvetica, sans-serif;
             Temos apenas algumas fontes disponíveis diretamente da máquina, sendo assim para tornar possível a utilização de outras fontes é necessário importa-las. <br>
             Com o <a href="http://fonts.google.com" target="_blank" rel="next">fonts.google.com</a>, é possível adiquirir várias fontes e "linka-las" ao nosso código para utilização. <br>
         </p>
-        <p>
-            Exemplo:
-        </p>
-        
+        <h3>Exemplo</h3>
         <code>
             <pre>
     &lt;style&gt;
@@ -163,6 +161,71 @@ font-family: Arial, Helvetica, sans-serif;
             Obs: Existem excessões
         </p>
 
+        <hr>
+
+        <h2>Seletores Personalizados</h2>
+        <p>
+            Para configurar itens específicos utiliza-se seletores personalizados, sendo eles, id ou class.
+        </p>
+        <h3>Id</h3>
+        <h4>Introdução</h4>
+        <p>
+            O grande diferencial do Id é que só se pode usar um seletor em todo o código HTML, ou seja, não pode haver dois ou mais Ids com o mesmo nome.
+        </p>
+        <h4>Exemplo</h4>
+        <code>
+            <pre>
+    &lt;head&gt;
+        &lt;style&gt;
+            h1#exemplo{
+                /*
+                    toda a formatação adicionada aqui modificará especialmente o h1 de id exemplo
+                */
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;html&gt;
+        &lt;body&gt;
+            &lt;h1 id="exemplo"&gt;exemplo&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+            </pre>
+        </code>
+
+        <h3>Class</h3>
+        <h4>Introdução</h4>
+        <p>
+            Pode ser utilizado várias vezes durante o código e cumpre muito bem a tarefa de estilizar partes semânticas do HTML, além disso, é possivel utilizar a tag class dentro de uma tag span, assim estilizando uma parte específicas do código.
+        </p>
+
+        <h4>Exemplo</h4>
+        <code>
+            <pre>
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .destaque {
+            background-color: #dbdb7794;
+        }
+        .titulos {
+            font-weight: bold;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+        &lt;h1 class="destaque titulos"&gt;Título&lt;/h1&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, libero qui. Modi dolorum magni ad sint itaque quis ipsam. Maxime ipsum debitis enim repellendus iusto repudiandae tempora possimus dolorum ullam.
+        &lt;/p&gt;
+        &lt;h2 class="destaque"&gt;Subtítulo&lt;/h2&gt;
+        &lt;p&gt;
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore aut alias nam tempora dolorum sunt rem quos, repellat natus animi, recusandae a quod error dolore nulla voluptatum ad impedit?
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </code>
         <hr>
 
     </main>
