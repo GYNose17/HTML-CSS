@@ -226,8 +226,25 @@ font-family: Arial, Helvetica, sans-serif;
 &lt;/html&gt;
             </pre>
         </code>
+
         <hr>
 
+        <h2>Pseudo Classes</h2>
+        <p>Se relacionam ao estado da div.</p>
+        <h3>:hover</h3>
+        <p>
+            Funciona quando o mouse for passado por cima de um determinado local. Passe o mouse por cima do "Exemplo." para ter uma ideia melhor.
+        </p>
+        <div id="hover">
+            <h4>Exemplo.</h4>
+            <p>
+                Neste caso, o que acontece é: tem uma div com <code>id="hover"</code> com um h4 "Exemplo." e um p com toda essa explicação. Nas CSS ocultamos o parágrafo desta forma: <code>div#hover > p {display: none;}</code> e utilizando a pseudo classe :hover, desta maneira: <code>div#hover:hover > p {display: block;}</code> fazemos com que toda a explicação apareça ao passar o mouse por cima do "Exemplo."
+            </p>
+        </div>
+
+        <hr>
+
+        
     </main>
 </body>
 </html>
