@@ -57,3 +57,31 @@ div#hover > p {
 #hover:hover > p {
     display: block;
 }
+
+.box{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    outline-width: 3px;
+    outline: red;
+}
+
+.display{
+    background-color: aquamarine;
+    width: fit-content;
+    border-radius: 5px;
+    padding-inline: 10px;
+    display: inline-block;
+    border-color: red;
+    border-top: 5px solid aquamarine;
+}
+
+div.display > h3{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 10px;
+    margin: auto;
+}
