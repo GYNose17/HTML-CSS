@@ -18,12 +18,11 @@ h1{
     border-radius: 10px;
 }
 
-h2, h3, h4{
+h2, h3, h4, h5{
     background-color: white;
     color: #276BF2;
     width: fit-content;
     padding-inline: 5px;
-
 }
 
 p{

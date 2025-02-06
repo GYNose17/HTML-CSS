@@ -163,16 +163,17 @@ font-family: Arial, Helvetica, sans-serif;
 
         <hr>
 
-        <h2>Seletores Personalizados</h2>
+        <h1>Seletores Personalizados</h1>
         <p>
             Para configurar itens específicos utiliza-se seletores personalizados, sendo eles, id ou class.
         </p>
-        <h3>Id</h3>
-        <h4>Introdução</h4>
+        <h2>Id</h2>
+        <h3>Introdução</h3>
         <p>
-            O grande diferencial do Id é que só se pode usar um seletor em todo o código HTML, ou seja, não pode haver dois ou mais Ids com o mesmo nome.
+            O grande diferencial do Id é que só se pode usar um seletor em todo o código HTML, ou seja, não pode haver dois ou mais Ids com o mesmo nome. <br>
+            Para se referir a um id, utiliza-se "#"
         </p>
-        <h4>Exemplo</h4>
+        <h3>Exemplo</h3>
         <code>
             <pre>
     &lt;head&gt;
@@ -192,13 +193,14 @@ font-family: Arial, Helvetica, sans-serif;
             </pre>
         </code>
 
-        <h3>Class</h3>
-        <h4>Introdução</h4>
+        <h2>Class</h2>
+        <h3>Introdução</h3>
         <p>
-            Pode ser utilizado várias vezes durante o código e cumpre muito bem a tarefa de estilizar partes semânticas do HTML, além disso, é possivel utilizar a tag class dentro de uma tag span, assim estilizando uma parte específicas do código.
+            Pode ser utilizado várias vezes durante o código e cumpre muito bem a tarefa de estilizar partes semânticas do HTML, além disso, é possivel utilizar a tag class dentro de uma tag span, assim estilizando uma parte específicas do código. <br>
+            Para se referir à uma class, utiliza-se "."
         </p>
 
-        <h4>Exemplo</h4>
+        <h3>Exemplo</h3>
         <code>
             <pre>
 &lt;html&gt;
@@ -230,7 +232,7 @@ font-family: Arial, Helvetica, sans-serif;
         <hr>
 
         <h2>Pseudo Classes</h2>
-        <p>Se relacionam ao estado da div.</p>
+        <p>Se relacionam ao estado das coisas.</p>
         <h3>:hover</h3>
         <p>
             Funciona quando o mouse for passado por cima de um determinado local. Passe o mouse por cima do "Exemplo." para ter uma ideia melhor.
@@ -238,9 +240,22 @@ font-family: Arial, Helvetica, sans-serif;
         <div id="hover">
             <h4>Exemplo.</h4>
             <p>
-                Neste caso, o que acontece é: tem uma div com <code>id="hover"</code> com um h4 "Exemplo." e um p com toda essa explicação. Nas CSS ocultamos o parágrafo desta forma: <code>div#hover > p {display: none;}</code> e utilizando a pseudo classe :hover, desta maneira: <code>div#hover:hover > p {display: block;}</code> fazemos com que toda a explicação apareça ao passar o mouse por cima do "Exemplo."
+                Neste caso, o que acontece é: tem uma div com <code>id="hover"</code> com um h4 "Exemplo." e um p com toda essa explicação. Nas CSS ocultamos o parágrafo desta forma: <code>div#hover > p {display: none;}</code> <br>
+                Para se referir à uma pseudo-class, utiliza-se ":"
             </p>
         </div>
+
+        <hr>
+
+        <h2>Pseudo Elementos</h2>
+        <p>
+            Se relacionam com os elementos.
+        </p>
+        <h3>::after & ::before</h3>
+        <h4>Introdução</h4>
+        <p>
+            A pseudo-class ::after adiciona elementos ao fim de um elemento específico. Enquanto a pseudo-class ::before adiciona elementos ao inicio de um específico elemento.
+        </p>
 
         <hr>
 
