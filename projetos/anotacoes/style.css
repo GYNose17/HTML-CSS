@@ -58,12 +58,26 @@ div#hover > p {
     display: block;
 }
 
-.box{
-    background-color: black;
-    color: white;
+#caixa > p{
+    font-size: 2em;
+    font-weight: bold;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    padding: 10px;
+    margin: 5px;
+    background-color: green;
+    outline-color: red;
+    outline-width: 5px;
+    outline-style: solid;
+    border-radius: 5px;
+}
+
+#caixa{
+    background-color: yellow;
     width: fit-content;
-    outline-width: 3px;
-    outline: red;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .display{
@@ -72,16 +86,23 @@ div#hover > p {
     border-radius: 5px;
     padding-inline: 10px;
     display: inline-block;
-    border-color: red;
     border-top: 5px solid aquamarine;
+}
+
+ul.display{
+    padding: 5px 30px 10px 35px;
 }
 
 div.display > h3{
     background-color: black;
     color: white;
     width: fit-content;
-    padding-inline: 10px;
-    padding-block: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
     margin: auto;
+}
+
+#borderSH{
+    border: 3px dashed black;
+    background-color: black;
 }
