@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: darkgrey;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        header > h1{
+            text-align: center;
+            background-color: lightgrey;
+            padding: 5px;
+            width: fit-content;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+            }
+
+        nav{
+            background-color: grey;
+            padding: 3px;
+            text-align: center;
+        }
+
+        nav > a{
+            margin-right: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main{
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: beige;
+            padding: 10px;
+            box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.356);
+            border-radius: 0px 15px;
+        }
+
+        article > aside{
+            background-color: lightgrey;
+        }
+        
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Esportes</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus cupiditate nostrum! Qui illum, fuga maxime consectetur delectus libero autem ullam sit tempora hic dignissimos totam, velit nostrum quae ad.
+                </p>
+                <aside>
+                    <p>Escrito por Jomélia Cornodeta</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Desenvolvido por GuiLindo
+        </p>
+    </footer>
+</body>
+</html>
