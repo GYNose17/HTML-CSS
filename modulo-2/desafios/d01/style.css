@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'droid';
+    src: url(__MACOSX/fontes/droid.otf) format('opentype');
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0px;
+    background-color: #84E1AD;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #3CDC83, #14492C);
+    margin: 0px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+header > h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > p{
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+}
+
+header > menu{
+    padding-left: 15px;
+    margin: 0px;
+}
+
+header > menu > ul{
+    padding: 0%;
+    margin: 0px;
+}
+
+header > menu > ul > li{
+    display: inline;
+    margin: 0%;
+    padding: 0px;
+    padding-right: 20px;
+}
+
+main{
+    background-color: white;
+    margin: 0px;
+    padding: 20px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    width: 70%;
+    color: black;
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+main > article > h1, h2{
+    font-family: idroid;
+    padding: 0px;
+    margin: 0px;
+    color: #195C38;
+}
+
+main > article > h1{
+    font-size: 2em;
+}
+
+main > article > h2{
+    background-image: linear-gradient(to right, #C8ECD8, white);
+    padding-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #14492C;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+iframe{
+    width: 100%;
+    text-align: center;
+}
+div#Video{
+    text-align: center;
+    background-color: #1A5C38;
+    padding: 10px 20px;
+}
+
+aside{
+    background-color: #C5EBD6;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+aside > h3{
+    background-color: #2FA866;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+aside > p{
+    padding-inline: 5px;
+}
+
+footer{
+    background-color: #1A5C38;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+#bugdroid{
+    width: 50%;
+    margin-inline: 25%;
+}
