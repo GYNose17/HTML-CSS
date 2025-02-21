@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando com iframe</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            background-color: white;
+            padding: 5px;
+        }
+
+        iframe{
+            text-align: center;
+            width: 90vw;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escolha uma pagina</h1>
+        <nav>
+            <ul>
+                <li><a href="paginas/pag01.html" target="frame">Página 1</a></li>
+                <li><a href="paginas/pag02.html" target="frame">Página 2</a></li>
+                <li><a href="paginas/pag03.html" target="frame">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur architecto culpa delectus accusamus, totam eius! Dolores, illo quos possimus sapiente ipsam saepe consequuntur minus molestias, tempore aperiam, accusantium repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum quidem corporis sit dolorum fugiat libero dicta blanditiis cum, qui perspiciatis, odit cupiditate natus minus maiores accusamus magnam et provident.
+        </p>
+
+        <iframe src="paginas/pag01.html" name="frame" class="error">
+            Seu navegador não é compatível com isso (iframe)
+        </iframe>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque magni similique expedita et ullam nemo officiis, animi fugiat impedit commodi nobis ratione harum laborum voluptas quo rem ea labore eius.
+        </p>
+    </main>
+</body>
+</html>
